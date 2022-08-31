@@ -2,7 +2,7 @@ window.onload=init;
 
 function init()
 {
-    const Peta = new ol.Map
+    const WorldMap = new ol.Map
     ({
             view: new ol.View({
                 center:ol.proj.fromLonLat([0,0]), 
@@ -15,6 +15,6 @@ function init()
                     source: new ol.source.OSM()
                 })
             ],
-            target: 'peta' //this is DOM id
+            target: 'worldmap' //this is DOM id
     })
 }
